@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello!</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+<body>
+
+    <div class="MainDiv">
+
+        <h1>This is the Dojo Survey Homepage!</h1>
+        <h3>Please fill out the form below: </h3>
+
+        <form action="process" method="post">
+            <div class="Fillout">
+                <label for="Name">Your Name: </label>
+                <input type="text" name="Name">
+            </div>
+
+            <div class="Fillout">
+                <label for="Location">Dojo Location: </label>
+                <select name="Location">
+                    <option value="online">Online</option>
+                    <option value="sanjose">San Jose</option>
+                    <option value="burbank">Burbank</option>
+                </select>
+            </div>
+
+            <div class="Fillout">
+                <label for="Language">Favorite Language: </label>
+                <select name="Language">
+                    <option value="c#">C#</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
+
+            <div class="Fillout">
+                <label for="Comment">Comment (optional): </label>
+                <br>
+                <textarea name="Comment" cols="40" rows="5"></textarea>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+
+</html>

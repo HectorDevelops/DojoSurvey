@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style2.css" />
+</head>
+
+<body>
+    <div class="MainDiv">
+        <h1>Submitted Info:</h1>
+        <div>
+            <label for="Name">Name: @ViewBag.Name</label>
+        </div>
+        <div>
+            <label for="Location">Dojo Location: @ViewBag.Location</label>
+        </div>
+        <div>
+            <label for="Language">Favorite Language: @ViewBag.Language</label>
+        </div>
+        <div>
+            <label for="Comment">Comment (optional): 
+                <br>
+                @ViewBag.Comment</label>
+        </div>
+        <a href="/">Go Back</a>
+    </div>
+
+</body>
+
+</html>
